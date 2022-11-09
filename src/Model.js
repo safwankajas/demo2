@@ -11,7 +11,7 @@ import { a, useSpring } from "@react-spring/three"
 
 export default function Model(props) {
   // Fetch model and a separate texture
-  const { nodes, animations } = useGLTF("/stacy.glb")
+  const { nodes, animations } = useGLTF("/watch.glb")
   const texture = useTexture("/stacy.jpg")
   // Extract animation actions
   const { ref, actions, names } = useAnimations(animations)
@@ -39,7 +39,7 @@ export default function Model(props) {
           onPointerOver={() => setHovered(true)}
           onPointerOut={() => setHovered(false)}
           onClick={() => setIndex((index + 1) % names.length)}
-          geometry={nodes.stacy.geometry}
+          geometry={nodes.watch.geometry}
           skeleton={nodes.stacy.skeleton}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}>
