@@ -11,7 +11,7 @@ import { a, useSpring } from "@react-spring/three"
 
 export default function Model(props) {
   // Fetch model and a separate texture
-  const { nodes, animations } = useGLTF("/watch.glb")
+  const { nodes, animations } = useGLTF("/stacy.glb")
   const texture = useTexture("/stacy.jpg")
   // Extract animation actions
   const { ref, actions, names } = useAnimations(animations)
