@@ -40,7 +40,7 @@ export default function Model(props) {
           onPointerOut={() => setHovered(false)}
           onClick={() => setIndex((index + 1) % names.length)}
           geometry={nodes.watch.geometry}
-          skeleton={nodes.stacy.skeleton}
+          skeleton={nodes.watch.skeleton}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}>
           <meshStandardMaterial map={texture} map-flipY={false} skinning />
