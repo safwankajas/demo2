@@ -11,8 +11,13 @@ import { a, useSpring } from "@react-spring/three"
 
 export default function Model(props) {
   // Fetch model and a separate texture
+<<<<<<< HEAD
+  const { nodes, animations } = useGLTF("/wa.glb")
+  // const texture = useTexture("/stacy.jpg")
+=======
   const { nodes, animations } = useGLTF("/stacy.glb")
   const texture = useTexture("/stacy.jpg")
+>>>>>>> d3172df89ce6df30d6f5cb6c0946737260039016
   // Extract animation actions
   const { ref, actions, names } = useAnimations(animations)
   // Hover and animation-index states
@@ -39,11 +44,12 @@ export default function Model(props) {
           onPointerOver={() => setHovered(true)}
           onPointerOut={() => setHovered(false)}
           onClick={() => setIndex((index + 1) % names.length)}
-          geometry={nodes.stacy.geometry}
-          skeleton={nodes.stacy.skeleton}
+
+          geometry={nodes.wa.geometry}
+          skeleton={nodes.wa.skeleton}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}>
-          <meshStandardMaterial map={texture} map-flipY={false} skinning />
+          {/* <meshStandardMaterial map={texture} map-flipY={false} skinning /> */}
         </skinnedMesh>
       </group>
       <a.mesh receiveShadow position={[0, 1, -1]} scale={scale}>
