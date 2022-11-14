@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#progressBar {
+   
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%, 100% {
+      filter: hue-rotate(0);
+    }
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  #progressBar::before {
+    
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+  }
+  
+  #progressBar::after {
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+  }
+  
