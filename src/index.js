@@ -117,8 +117,8 @@ function Clouder(params) {
       }
   
       process(function (o) {
-        o.x = 1;
-        o.y = 0;
+        o.x = 0;
+        o.y = 1;
         o.z = 0;
         spin(o, (Math.random() * 2 - 1) * Math.PI);
         step(o, (Math.random() * 2 - 1) * Math.PI);
