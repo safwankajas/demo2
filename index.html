@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>    <!-- -----------------div animation-------------------- -->
+</head>
+
+<body>
+    <div class=" fixed  top-1/4 p-4 w-24 ">
+        <div id="progressBar" class="backdrop-blur -z-10 rounded-xl absolute w-16 "></div>
+        <!--light mode - tight side navigation with yellow notification-->
+        <div class=" z-10 py-4 px-2  text-gray-900 rounded-lg text-center shadow-lg">
+            <div class="progress"></div>
+            <img src="./src/photo/1.22.png" alt="alt placeholder" class="w-10 h-10 mx-auto mb-5">
+            <span class="cursor-pointer hover:text-gray-500 px-2 block mb-5">
+                <i class="fas fa-home">
+                </i>
+            </span>
+            <span class="cursor-pointer hover:text-gray-500 px-2 block mb-5">
+                <i class="fas fa-user p-2 bg-gray-200 rounded-full">
+                </i>
+            </span>
+            <span class="cursor-pointer hover:text-gray-500 px-2 block mb-5 relative">
+                <i class="fas fa-tasks">
+                </i>
+                <!-- <span class="absolute right-0 top-0 -mt-2 text-xs bg-yellow-500 text-black font-medium px-2 shadow-lg rounded-full border-2 border-white">3</span> -->
+            </span>
+
+        </div>
+    </div>
+    <section  style="background-image: url('./src/photo/download\ \(12\).jpg')" class="grid grid-row-2 place-items-center  bg-cover bg-neutral-800  md:flex justify-evenly ">
+        
+        <div class="mx-auto">
+            <div id="a" class="mt-32 animate-spin-slow  bg-cover absolute" style="background-image: url('./src/photo/1.2cir2.png')" ></div>
+            <model-viewer class=" mx-auto  " id="mod"  autoplay  shadow-intensity="1" interaction-prompt="none" src="./src/photo/watch.glb"alt="dragon" camera-controls disable-pan disable-tap disable-zoom min-camera-orbit='-90deg 75deg 0deg' max-camera-orbit= '90deg 75deg 0deg' ></model-viewer>
+
+        </div>
+        <div class=" mx-auto w-1/1 -mt-96  backdrop-blur-3xl h-80 rounded-lg">
+            <div class="p-10 grid grid-row-3 gap-2 place-items-center  items-center  content-center  h-full  text-center">
+                <div class="text-4xl font-bold"  data-aos="zoom-in">Hello my name is</div>
+                <div class="text-6xl font-bold"  data-aos="zoom-in">Safwan Kajas</div>
+                <div class="text-xl "  data-aos="zoom-in">And I'm a <span class="typ"></span></div>
+               
+            </div>
+        </div>
+    </section>
+
+    <article>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>It should be filling up by now
+
+    </article>
+    <script>
+
+        let progress = document.getElementById('progressBar')
+        let totalHeight = document.body.scrollHeight - window.innerHeight
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 40
+            progress.style.height = progressHeight + '%'
+
+
+var typed = new Typed('.element', options);
+        var typed = new Typed(".typ",{
+        strings: ["Developer","Editor","Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+        }
+    </script>
+</body>
+
+</html>
