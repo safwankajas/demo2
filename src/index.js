@@ -465,7 +465,7 @@ function Clouder(params) {
     //   callback: function (id) {
     //     alert(id);
     //   },
-    fontSize: 18,
+    fontSize: 15,
     // colorBgr: ,
     idleMotion: 1,
     // colorMax: cloudColor,

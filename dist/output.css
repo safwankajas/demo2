@@ -604,8 +604,8 @@ video {
   margin-top: 4rem;
 }
 
-.-ml-10 {
-  margin-left: -2.5rem;
+.-ml-14 {
+  margin-left: -3.5rem;
 }
 
 .mt-32 {
@@ -630,6 +630,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -728,6 +732,11 @@ video {
 .bg-neutral-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -869,8 +878,8 @@ video {
 }
 
 #cloud {
-  width: 300px;
-  height: 350px;
+  width: 450px;
+  height: 400px;
   border-radius: 50%;
 }
 
@@ -880,6 +889,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:invisible {
+    visibility: hidden;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
