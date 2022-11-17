@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -513,6 +513,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .fixed {
   position: fixed;
 }
@@ -537,12 +571,20 @@ video {
   top: 0px;
 }
 
+.top-96 {
+  top: 24rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -558,16 +600,32 @@ video {
   margin-top: -0.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.-ml-14 {
+  margin-left: -3.5rem;
+}
+
 .mt-32 {
   margin-top: 8rem;
 }
 
-.-mt-96 {
-  margin-top: -24rem;
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .block {
   display: block;
+}
+
+.flex {
+  display: flex;
 }
 
 .grid {
@@ -578,12 +636,8 @@ video {
   height: 2.5rem;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
-.h-full {
-  height: 100%;
+.h-64 {
+  height: 16rem;
 }
 
 .w-24 {
@@ -596,6 +650,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 @keyframes spin {
@@ -616,20 +674,16 @@ video {
   place-items: center;
 }
 
-.content-center {
-  align-content: center;
-}
-
-.items-center {
-  align-items: center;
+.justify-center {
+  justify-content: center;
 }
 
 .justify-evenly {
   justify-content: space-evenly;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-xl {
@@ -644,8 +698,16 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-white {
@@ -680,8 +742,8 @@ video {
   padding: 0.5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-4 {
@@ -703,19 +765,14 @@ video {
   line-height: 1rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-medium {
@@ -724,6 +781,14 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-gray-900 {
@@ -742,14 +807,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .backdrop-blur {
   --tw-backdrop-blur: blur(8px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.backdrop-blur-3xl {
-  --tw-backdrop-blur: blur(64px);
+.backdrop-blur-2xl {
+  --tw-backdrop-blur: blur(40px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -799,6 +868,12 @@ video {
   filter: blur(30px);
 }
 
+#cloud {
+  width: 450px;
+  height: 400px;
+  border-radius: 50%;
+}
+
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -809,4 +884,5 @@ video {
     display: flex;
   }
 }
+  
   

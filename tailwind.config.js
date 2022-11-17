@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 40s linear infinite',
+        'spin-slow': 'spin 40s linear infinite'
       }
+      ,
     },
   },
   plugins: [],

@@ -7,6 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link href="./dist/output.css" rel="stylesheet">
+    <script src="./src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>    <!-- -----------------div animation-------------------- -->
 </head>
 
@@ -33,23 +34,33 @@
 
         </div>
     </div>
-    <section  style="background-image: url('./src/photo/download\ \(12\).jpg')" class="grid grid-row-2 place-items-center  bg-cover bg-neutral-800  md:flex justify-evenly ">
+    <section  style="background-image: url('./src/photo/download\ \(12\).jpg')" class=" overflow-hidden grid grid-row-2 place-items-center  bg-cover bg-neutral-800  md:flex justify-evenly ">
         
         <div class="mx-auto">
-            <div id="a" class="mt-32 animate-spin-slow  bg-cover absolute" style="background-image: url('./src/photo/1.2cir2.png')" ></div>
-            <model-viewer class=" mx-auto  " id="mod"  autoplay  shadow-intensity="1" interaction-prompt="none" src="./src/photo/watch.glb"alt="dragon" camera-controls disable-pan disable-tap disable-zoom min-camera-orbit='-90deg 75deg 0deg' max-camera-orbit= '90deg 75deg 0deg' ></model-viewer>
-
-        </div>
-        <div class=" mx-auto w-1/1 -mt-96  backdrop-blur-3xl h-80 rounded-lg">
-            <div class="p-10 grid grid-row-3 gap-2 place-items-center  items-center  content-center  h-full  text-center">
-                <div class="text-4xl font-bold"  data-aos="zoom-in">Hello my name is</div>
-                <div class="text-6xl font-bold"  data-aos="zoom-in">Safwan Kajas</div>
-                <div class="text-xl "  data-aos="zoom-in">And I'm a <span class="typ"></span></div>
-               
+            <div id="cloud" class=" mt-16  -ml-14  absolute ">
+                <script src="./src/index.js"></script>
             </div>
-        </div>
-    </section>
+            <div id="a" class="mt-32 animate-spin-slow  bg-cover absolute" style="background-image: url('./src/photo/1.2cir2.png')" ></div>
+            <model-viewer class="z-10 mx-auto  " id="mod"  autoplay  shadow-intensity="1" interaction-prompt="none" src="./src/photo/watch.glb"alt="dragon" camera-controls disable-pan disable-tap disable-zoom min-camera-orbit='-90deg 75deg 0deg' max-camera-orbit= '90deg 75deg 0deg' ></model-viewer>
 
+        </div>
+        <div class=" z-20 absolute top-96 flex justify-center">
+            <div class=" block p-6 rounded-2xl shadow-lg backdrop-blur-2xl  h-64 max-w-lg">
+              <h5 class="text-gray-900 text-2xl leading-tight font-bold mt-6  mb-6">Hello my name is</h5>
+              <p class="text-gray-900 font-extrabold text-5xl mb-6">
+                SAFWAN KAJAS
+              </p>
+              <h5 class="text-gray-900 text-2xl leading-tight font-bold mt-6  mb-6">And I'm a<a href="http://" target="_blank" rel="noopener noreferrer"></a></h5>
+            </div>
+          </div>
+          
+    </section>
+    <section id="skills">
+        <div id="cloudRapper">
+          <div id="cloud"></div>
+        </div>
+        
+      </section>
     <article>
         <br>
         <br>

@@ -49,4 +49,13 @@
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
   }
+
+  #cloud {
+    
+    width: 450px;
+    height: 400px;
+    border-radius: 50%;
+
+  }
+  
   
