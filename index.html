@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
     <script src="./src/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>    <!-- -----------------div animation-------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- -----------------div animation-------------------- -->
 </head>
 
 <body class="w-full overflow-x-hidden">
-    <div class=" fixed  top-1/4 p-4 w-24 ">
+    <div class=" fixed z-50  top-1/4 p-4 w-24 ">
         <div id="progressBar" class="backdrop-blur -z-10 rounded-xl absolute w-16 "></div>
         <!--light mode - tight side navigation with yellow notification-->
-        <div class=" z-10 py-4 px-2  text-gray-900 rounded-lg text-center shadow-lg">
+        <div class=" z-10 py-4 px-2  text-gray-900 rounded-lg text-center h-44 shadow-lg">
             <div class="progress"></div>
-            <img src="./photo/1.22.png" alt="alt placeholder" class="w-10 h-10 mx-auto mb-5">
+            <!-- <img src="./photo/1.22.png" alt="alt placeholder" class="w-10 h-10 mx-auto mb-5"> -->
             <span class="cursor-pointer hover:text-gray-500 px-2 block mb-5">
-                <i class="fas fa-home">
-                </i>
+                <a href="#home">
+                    <i class="fas fa-home">
+                    </i>
+                </a>
             </span>
             <span class="cursor-pointer hover:text-gray-500 px-2 block mb-5">
-                <i class="fas fa-user p-2 bg-gray-200 rounded-full">
-                </i>
+                <a href="#about">
+
+                    <i class="fas fa-user p-2  rounded-full">
+                    </i>
+                </a>
             </span>
             <span class="cursor-pointer hover:text-gray-500 px-2 block mb-5 relative">
                 <i class="fas fa-tasks">
@@ -34,101 +40,88 @@
 
         </div>
     </div>
-    <section  style="background-image: url('./src/photo/download\ \(12\).jpg')" class=" overflow-hidden grid grid-row-2 place-items-center  bg-cover bg-neutral-800  md:flex justify-evenly ">
-        
+    <section id="home"
+        class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-300  to-blue-400 overflow-hidden grid grid-row-2 place-items-center bg-center bg-cover bg-neutral-800 h-screen md:flex justify-evenly ">
+
         <div class="mx-auto">
-            <div id="cloud" class="  mt-16  overflow-hidden -ml-14 absolute ">
+            <div id="cloud" class=" hidden md:block mt-16   -ml-14 absolute ">
                 <script src="./src/index.js"></script>
             </div>
-            <div id="a" class="mt-32 animate-spin-slow  bg-cover absolute" style="background-image: url('./src/photo/1.2cir2.png')" ></div>
-            <model-viewer class="z-10 mx-auto  " id="mod"  autoplay  shadow-intensity="1" interaction-prompt="none" src="./src/photo/watch.glb"alt="dragon" camera-controls disable-pan disable-tap disable-zoom min-camera-orbit='-90deg 75deg 0deg' max-camera-orbit= '90deg 75deg 0deg' ></model-viewer>
+            <div id="a" class="mt-32 animate-spin-slow  bg-cover absolute"
+                style="background-image: url('./src/photo/1.2cir2.png')"></div>
+            <model-viewer class="z-10 mx-auto  " id="mod" autoplay shadow-intensity="1" interaction-prompt="none"
+                src="./src/photo/watch.glb" alt="dragon" camera-controls disable-pan disable-tap disable-zoom
+                min-camera-orbit='-90deg 75deg 0deg' max-camera-orbit='90deg 75deg 0deg'></model-viewer>
 
         </div>
-        <div class=" z-20 absolute top-96 flex justify-center">
-            <div class=" block p-6 rounded-2xl shadow-lg backdrop-blur-2xl  h-64 w-10/12">
-              <h5 class="text-gray-900 text-2xl leading-tight font-bold mt-6  mb-6">Hello my name is</h5>
-              <p class=" font-extrabold text-5xl mb-6">
-                SAFWAN KAJAS
-              </p>
-              <h5 class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 text-2xl leading-tight font-bold mt-6  mb-6">And I'm a<a href="http://" target="_blank" rel="noopener noreferrer"></a></h5>
+        <div class=" bg-cover  bg-center z-20 absolute rounded-2xl bottom-24 flex justify-center">
+            <div class="  block p-6 rounded-2xl shadow-lg  backdrop-blur-2xl ">
+                <h5 class=" text-2xl leading-tight font-bold mt-3  mb-6">Hello my name is</h5>
+                <p class=" font-extrabold inline-block text-4xl mb-3 sm:text-5xl">
+                    SAFWAN KAJAS
+                </p>
+                <h5 class=" font-extrabold text-2xl leading-tight  mt-4  mb-4">And I'm a <a href="http://"
+                        target="_blank" rel="noopener noreferrer"></a> <span
+                        class="txt-rotate bg-clip-text text-transparent bg-gradient-to-r from-rose-400 to-red-600 "
+                        data-period="2000" data-rotate='["Developer","Editor","Designer"]'></span></h5>
+                <script src="./src/font.js"></script>
             </div>
-          </div>
-          
-    </section>
-    
-    <article>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>It should be filling up by now
+        </div>
 
-    </article>
+    </section>
+    <!------------------------------------------- about------------------------------------------------------------------------------ -->
+    <section id="about" class="ab z-10  bg-neutral-900 h-screen">
+        <div class="wrapper mt-16 sm:mt-1 animate-pulse">
+            <div class="top">ABOUT</div>
+            <div class="bottom" aria-hidden="true">ABOUT</div>
+        </div>
+          
+
+        <div class=" grid h-screen place-items-center ">
+            <div id="a" class="  animate-spin-slow  bg-cover absolute sm:w-full"></div>
+            <div class="  absolute cursor-pointer  card overflow-hidden backdrop-blur-3xl rounded-full  w-full sm:w-50">
+                <div class="mt-1 fade grid   place-items-center ">
+                    <img src="./src/photo/prfl3.png" alt="img" class="image  sm:w-full">
+                </div>
+                <div class="ml-12 mt-12 absolute">
+
+                    <!-- <h4 class="text-neutral-200 text font-extrabold text-3xl mt-4">ABOUT</h4> -->
+                    <h5 class="text sub  bg-clip-text text-transparent bg-gradient-to-r from-rose-400 to-red-600  font-bold text-xl ml-10">I'm safwan kajas </h5>
+                    <p class="text info  text-neutral-50">
+                        A self taught designer with experience in creating digital interfaces, websites, and print
+                        design but I also have the ability to bring those concepts to life through creative front-end
+                        development.
+                    </p>
+
+                </div>
+            </div>
+            <div class="containe block  sm:hidden">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+        </div>
+        <br>
+        <div class=" text-2xl h-16 w-80 text-center flex justify-around items-center  mt-80  " data-aos="fade-up" data-aos-anchor-placement="center-bottom">  
+            <a class=" hover:animate-bounce p-2 w-12 h-12  bg-neutral-200 place-items-center rounded-full" href="https://www.instagram.com/safwankajas/"><i class="fab fa-instagram "></i></a> 
+            <a class="hover:animate-bounce p-2 w-12 h-12  bg-neutral-200 place-items-center rounded-full" href="https://www.linkedin.com/in/safwan-k-b6a699202/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="hover:animate-bounce p-2 w-12 h-12  bg-neutral-200 place-items-center rounded-full" href="https://www.facebook.com/profile.php?id=100003221146387"><i class="fab fa-facebook-f"></i></a>
+
+            <a class=" hover:animate-bounce p-2 w-12 h-12  bg-neutral-200 place-items-center rounded-full" href="https://chatwith.io/s/hai-3"><i class="fab fa-whatsapp" ></i></a>
+          </div>
+           
+        
+        <script src="./src/card.js"></script>
+    </section>
+
     <script>
 
         let progress = document.getElementById('progressBar')
         let totalHeight = document.body.scrollHeight - window.innerHeight
         window.onscroll = function () {
-            let progressHeight = (window.pageYOffset / totalHeight) * 40
+            let progressHeight = (window.pageYOffset / totalHeight) * 80
             progress.style.height = progressHeight + '%'
-
-
-var typed = new Typed('.element', options);
-        var typed = new Typed(".typ",{
-        strings: ["Developer","Editor","Designer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-
-    });
         }
+
     </script>
 </body>
 
